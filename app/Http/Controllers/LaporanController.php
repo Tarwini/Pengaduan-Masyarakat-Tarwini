@@ -9,7 +9,8 @@ class LaporanController extends Controller
 {
     public function index()
     {
-        return view('laporan.index');
+        $pengaduan = Pengaduan::all();
+    	return view('laporan.index', ['pengaduan' => $pengaduan]);
     }
 
     public function cetak_pdf()

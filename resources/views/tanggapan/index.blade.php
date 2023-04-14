@@ -23,7 +23,6 @@
                                 <tr>
                                     <th>Tanggal tanggapan</th>
                                     <th>Tanggapan</th>
-                                 
                                 </tr>
                             </thead>
                             <tbody>
@@ -31,9 +30,6 @@
                                 <tr>
                                     <td>{{ $p->tgl_tanggapan }}</td>
                                     <td>{{ $p->tanggapan }}</td>
-                                    <td>
-                                       
-                                    </td>
                                 </tr>
                                 @endforeach
                             </tbody>

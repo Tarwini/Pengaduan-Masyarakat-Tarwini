@@ -20,7 +20,7 @@
             <th>Tanggal Pengaduan</th>
             <th>Nik</th>
             <th>Isi Laporan</th>
-            <th>Foto</th>
+            <th width="40%">Foto</th>
             <th>Status</th>
         </thead>
         <tbody>

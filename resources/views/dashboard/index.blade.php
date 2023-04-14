@@ -195,31 +195,34 @@
                                         <li class=" ">
                                             <a href="/petugas">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">petugas</span>
+                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Petugas</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
                                         @endif
-                                        <!-- @endif -->
+                                        @if (auth()->user()->level == 'admin')
+                                        <li class=" ">
+                                            <a href="/masyarakat">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Masyarakat</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        @endif
+
+                                        @if (auth()->user()->level == 'admin' || auth()->user()->level == 'petugas')
+                                        <li class=" ">
+                                            <a href="/laporan">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Laporan</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        @endif
                                     </ul>
                                   
                                     
-                                    <li class="active">
-                                        <a href="/cetak" target="_blank">
-                                            <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
-                                            <span class="pcoded-mtext" data-i18n="nav.dash.main">Laporan</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                    @if (auth()->user()->level == 'admin')
-                                    <li class="active">
-                                    <a href="masyarakat">
-                                        <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Masyarakat</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                                    @endif
+                                    
                                 </li>
                                 </ul>
                             </div>

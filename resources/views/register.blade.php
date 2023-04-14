@@ -63,7 +63,7 @@
                             <div class="auth-box">
                                 <div class="row m-b-20">
                                     <div class="col-md-12">
-                                        <h3 class="text-center txt-primary">Sign up</h3>
+                                        <h3 class="text-center txt-primary">Daftarkan Diri Anda</h3>
                                     </div>
                                 </div>
                                 
@@ -174,7 +174,7 @@
                                 <div class="row">
                                 <div class="col-sm-8 col-xs-12 forgot-phone text-left">
                                         <div class="text-right text-inverse">Sudah Punya Akun?</a>
-                                            <a href="logins" class="text-right f-w-600 text-inverse">Back</a>
+                                            <a href="logins" class="text-right f-w-600 text-inverse">Kembali</a>
                                         </div>
                                     </div>
                                     <div class="col-md-2">

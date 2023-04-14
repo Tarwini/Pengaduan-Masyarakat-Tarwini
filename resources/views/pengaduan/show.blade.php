@@ -70,12 +70,12 @@
                                 </div>
                             </div>
 </div>
-@if (auth()->user()->level == 'petugas')
+@if (auth()->user()->level == 'petugas' || auth()->user()->level == 'admin')
 <div class="col-lg-6 col-12">
     <div class="card">
         <div class="card-header">
             <div class="text-center">
-                Tanggapan petugas
+                Tanggapi
             </div>
         </div>
         <div class="card-body">
@@ -101,6 +101,7 @@
                                             <textarea name="tanggapan" rows="5" class="form-control" placeholder="Isi Tanggapan"></textarea>
                                         </div>
                                     </div>
+                                    <br>
                                     <button class="btn btn-inverse" type="submit">Save</button>
                                 </form>
                                 </div>

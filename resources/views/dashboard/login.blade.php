@@ -109,13 +109,10 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-5 col-xs-12 forgot-phone text-right">
-                                        <div class="text-right text-inverse">No Have Account?</a>
-                                            <a href="register" class="text-right f-w-600 text-inverse">Register</a>
+                                        <div class="text-right text-inverse"></a>
+                                            <a href="register" class="text-right f-w-600 text-inverse"><h5>Register</h5></a>
                                         </div>
                                     </div>
-
-                                    <hr />
-
 
                                 </div>
                                 <button type="submit" class="btn btn-info btn-block">Login</button>

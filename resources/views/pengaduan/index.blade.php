@@ -5,7 +5,7 @@
             <div class="card mt-5">
                 <div class="card-body">
                 @if (auth()->user()->level == 'masyarakat')
-                    <a href="/pengaduan/create" class="btn btn-inverse">Input pengaduan Baru</a>
+                    <a href="/pengaduan/create" class="btn btn-inverse">Ajukan Pengaduan Baru</a>
                     <br/>
                     <br/>
                     @endif
@@ -43,9 +43,9 @@
                                 <td>
                                     <a href="/pengaduan/hapus/{{ $p->id_pengaduan }}" class="btn btn-danger">Hapus</a>
                                     @if (auth()->user()->level == 'masyarakat')
-                                    <a href="/pengaduan/detail/{{ $p->id_pengaduan }}" class="btn btn-success">Detail</a>\
+                                    <a href="/pengaduan/detail/{{ $p->id_pengaduan }}" class="btn btn-success">Detail</a>
                                     @endif
-                                    @if (auth()->user()->level == 'petugas')
+                                    @if (auth()->user()->level == 'petugas' || auth()->user()->level == 'admin')
                                     <a href="/pengaduan/detail/{{ $p->id_pengaduan }}" class="btn btn-success">Tanggapi</a>
                                     @endif
                                 </td>
